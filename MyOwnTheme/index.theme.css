@@ -1,6 +1,6 @@
 /**
 	* @name MyOwnTheme
-	* @version 0.0.6
+	* @version 0.0.7
 	* @description 본인 전용 테마
 	* @author KlartNET
 	*
@@ -44,7 +44,7 @@ border-radius: 15px;
 }
 
 	/* Hide Cho L */
-.avatarWrapper[data-user-id="487962402097332224"] svg > foreignObject {
+div[class^="avatarWrapper-"]"487962402097332224"] svg > foreignObject img[src^="https://cdn.discordapp.com/avatars/725658175235162132/"] {
 	visibility: hidden;
 }
 
