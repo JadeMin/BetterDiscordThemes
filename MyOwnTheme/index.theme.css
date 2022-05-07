@@ -44,7 +44,7 @@ border-radius: 15px;
 }
 
 	/* Hide Cho L */
-div[class^="avatarWrapper-"]"487962402097332224"] svg > foreignObject img[src^="https://cdn.discordapp.com/avatars/725658175235162132/"] {
+div[class^="avatar-"][img[src^="https://cdn.discordapp.com/avatars/725658175235162132/"] {
 	visibility: hidden;
 }
 
