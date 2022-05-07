@@ -44,7 +44,7 @@ border-radius: 15px;
 }
 
 	/* Hide Cho L */
-img[class^="avatar-"][src^="https://cdn.discordapp.com/avatars/725658175235162132/"] {
+img[class^="avatar-"][src^="https://cdn.discordapp.com/avatars/487962402097332224/"] {
 	visibility: hidden;
 }
 
