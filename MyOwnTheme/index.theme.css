@@ -1,0 +1,235 @@
+/**
+	* @name MyOwnTheme
+	* @version 0.0.6
+	* @description 본인 전용 테마
+	* @author KlartNET
+	*
+	* @website https://github.com/JadeMin/BetterDiscordThemes/MyOwnTheme/NyOwnTheme.theme.css
+	* @source https://github.com/JadeMin/BetterDiscordThemes/NyOwnTheme/MyOwnTheme.theme.css
+**/
+
+			/*=== Vanilla Discord ===*/
+/*@font-face {
+	font-family: "Destiny Symbols";
+	src: url("https://uwu.blue/destiny/DestinySymbolsXbox.eot");
+	src: url("https://uwu.blue/destiny/DestinySymbolsXbox.eot?#iefix") format('embedded-opentype'),
+		url("https://uwu.blue/destiny/DestinySymbolsXbox.svg#DestinySymbolsXbox") format('svg');
+	font-style: normal;
+}
+@font-face {
+	font-family: "Destiny Keys";
+	src: url("https://uwu.blue/destiny/DestinyKeys.eot");
+	src: url("https://uwu.blue/destiny/DestinyKeys.eot?#iefix") format('embedded-opentype'),
+		url("https://uwu.blue/destiny/DestinyKeys.svg#DestinyKeys") format('svg');
+	font-style: normal;
+}
+html ::placeholder, html body, html button, html input, html select, html textarea {
+	font-family: Whitney, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif, 
+		"Destiny Keys", "Destiny Symbols" !important;
+}*/
+
+	/* Remove emoji btn randomization */
+button[class*="emojiButton-"] div[class^="sprite-"] {
+	background-position: -110px -66px !important;
+}
+
+	/* Hide message quick react btn */
+div[id^="message-quickreact"] {
+	display: none;
+}
+
+	/* Rounded context menu */
+[class*="menu-"], [class*="colorDefault-"] { 
+border-radius: 15px;
+}
+
+	/* Hide Cho L */
+.avatarWrapper[data-user-id="487962402097332224"] svg > foreignObject {
+	visibility: hidden;
+}
+
+
+
+
+
+			/*=== PermissionViewer ===*/
+/*.member-perms-title {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+/*#permissions-modal-wrapper #permissions-modal {
+	width: 550px;
+	height: 450px;
+}
+#permissions-modal-wrapper .perm-scroller {
+	width: 550px;
+	height: 450px;
+}*/
+
+	/* Korean translation */
+.member-perms-title,
+#channel-context-Permissions > .da-label,
+#guild-context-Permissions > .da-label,
+#user-context-Permissions > .da-label,
+#permissions-modal > .header > .title {
+	visibility: hidden;
+}
+.member-perms-title:before,
+#channel-context-Permissions > .da-label:before,
+#guild-context-Permissions > .da-label:before,
+#user-context-Permissions > .da-label:before,
+#permissions-modal > .header > .title:before {
+	visibility: visible;
+	content: "권한";
+}
+
+
+
+
+
+
+			/*=== EditUploads ===*/
+/*#EditUploadsEditButton {
+	width: 44px;
+	height: 22px;
+	background-color: #43b581;
+	border-radius: 3px;
+}
+#EditUploadsEditButton:hover {
+	background-color: #3ca374;
+}
+#EditUploadsEditButton > span {
+	text-decoration: none !important;
+	font-size: 0px;
+}
+#EditUploadsEditButton > span:before {
+	font-size: 13px;
+	content: "편집";
+}*/
+
+
+
+
+
+
+			/*=== MultiUploads ===*/
+/*.da-uploadModal button[type=submit] > .da-contents>span {
+	font-size: 0px;
+}
+.da-uploadModal button[type=submit] > .da-contents>span:before {
+	position: relative a !important;
+	top: 2px;
+	font-size: 14px;
+	content: "업로드";
+}*/
+
+
+
+
+
+
+			/*=== ChatFilter ===*/
+span[class*="censoredStamp-"] {
+	display: none;
+}
+
+
+
+
+
+
+			/*=== PinDMs ===*/
+div[class*="unpinButton-"] {
+	display: none !important;
+}
+
+
+
+
+
+
+
+			/*=== EditServers ===*/
+/*[aria-label="섬기는 사람"] {
+	font-size: 0px;
+}
+[aria-label="섬기는 사람"]:before {
+	font-size: 14px;
+	content: "서버";
+}*/
+
+
+
+
+
+
+			/*=== ShowSessions ===*/
+	/* Fancy modal */
+/*.ShowSessions-modal-item {
+	padding: 20px 20px 0!important;
+	background: var(--background-secondary);
+}
+.ShowSessions-modal-headerContainer > b {
+	order: 1;
+	padding-bottom: 10px;
+	font-weight: 600;
+	color: var(--header-primary);
+	font-family: var(--font-display);
+}
+.ShowSessions-modal-avatarWrapper [class*="wrapper-"] {
+	width: 40px!important;
+	height: 40px!important;
+}
+.ShowSessions-modal-badgesContainer {
+	padding: 0 0 10px 8px!important;
+	order: 1;
+}
+.ShowSessions-modal-headerContainer {
+	margin-bottom: 20px!important;
+}
+.ShowSessions-modal-headerContainer .ShowSessions-modal-avatarWrapper {
+	margin: 0 10px 0 0!important;
+	order: 0!important;
+}
+.ShowSessions-modal-message {
+	position: absolute;
+	padding: 20px 50px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: var(--header-secondary);
+}
+.ShowSessions-modal-body {
+	height: 0;
+	overflow: hidden;
+	background-color: var(--background-primary);
+	border-radius: 5px;
+	padding: 0 20px;
+	transition: .2s ease;
+}
+.ShowSessions-modal-item:hover .ShowSessions-modal-body {
+	height: 162px;
+	margin-bottom: 20px;
+	transition: .2s ease;
+}
+.ShowSessions-modal-sessionInfo b {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--header-secondary);
+	font-family: var(--font-display);
+}
+.ShowSessions-modal-sessionInfo span {
+	font-size: 14px;
+}
+.ShowSessions-modal-sessionInfo:nth-child(1) {
+	position: absolute;
+	right: 40px;
+	transform: translate(0,-58px);
+}
+.ShowSessions-modal-sessionInfo:nth-child(1) b {
+	display: none;
+}
+.ShowSessions-modal-sessionInfo:nth-child(2) {
+	margin: 20px 0 0;
+}*/
